@@ -1,0 +1,84 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3075,         76]
+NotebookOptionsPosition[      2820,         62]
+NotebookOutlinePosition[      3177,         78]
+CellTagsIndexPosition[      3134,         75]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"x", "=", "\"\</Users/ss/Desktop/mhacks/synthesAIzer/\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", "x", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"While", "[", 
+  RowBox[{"True", ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"note", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{"\"\<potato.txt\>\"", ",", " ", "\"\<Text\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"EmitSound", "[", 
+     RowBox[{"Sound", "[", 
+      RowBox[{"SoundNote", "[", 
+       RowBox[{"note", ",", "1", ",", "\"\<Violin\>\""}], "]"}], "]"}], "]"}],
+     ";", "\[IndentingNewLine]", 
+    RowBox[{"Pause", "[", "1", "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.684962695178602*^9, 3.6849627411558323`*^9}, {
+   3.684963570936225*^9, 3.6849635917678823`*^9}, {3.684963876775803*^9, 
+   3.68496389126517*^9}, {3.684964235194295*^9, 3.6849642395274277`*^9}, {
+   3.684964454264791*^9, 3.68496445427009*^9}, {3.684964833895157*^9, 
+   3.6849649705391693`*^9}, {3.68496500632099*^9, 3.684965059422578*^9}, {
+   3.684965105929092*^9, 3.684965121609236*^9}, {3.684965163226029*^9, 
+   3.684965177947032*^9}, {3.684965327145631*^9, 3.684965327908723*^9}, {
+   3.684965642123032*^9, 3.684965651324058*^9}, {3.6849658198783484`*^9, 
+   3.684965824712936*^9}, {3.684965861257778*^9, 3.684965892228277*^9}, {
+   3.684965947949443*^9, 3.684965951390828*^9}, {3.684965985514502*^9, 
+   3.684966013298708*^9}, {3.684966333285677*^9, 3.6849663364548683`*^9}, {
+   3.68496641804249*^9, 3.684966435543461*^9}, {3.684966467081547*^9, 
+   3.684966472213284*^9}, {3.6849668579760923`*^9, 3.684966859608386*^9}, {
+   3.684966902718903*^9, 3.6849669075897703`*^9}, 3.684967952285907*^9, {
+   3.684968001334984*^9, 3.684968004781081*^9}, 3.684969189425453*^9, {
+   3.684982725417239*^9, 3.6849827277926397`*^9}, {3.684982779875239*^9, 
+   3.6849827799487247`*^9}, {3.684982861822884*^9, 3.6849828623234*^9}, {
+   3.684983291455298*^9, 3.6849833213700523`*^9}, {3.684983372070492*^9, 
+   3.684983373954829*^9}, {3.684983533483156*^9, 3.68498361781012*^9}, {
+   3.684983659877842*^9, 3.684983727388542*^9}, {3.684983768496728*^9, 
+   3.684983892341968*^9}}]
+},
+WindowSize->{720, 874},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2258, 40, 159, "Input"]
+}
+]
+*)
+
