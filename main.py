@@ -4,6 +4,7 @@ import wave
 from note import get_note
 from note import get_next_note
 import numpy as np
+import time
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -40,9 +41,14 @@ while True:
         #     if d != None and len(d) != 0:
         #         one_note.append(d)
         temp_note = np.fromstring(data, dtype = np.int16)
-        np.concatenate([one_note,temp_note])
+        one_note = np.concatenate([one_note,temp_note])
     if len(one_note) != 0:
-        print get_note(one_note)
+        fb = open("notes.txt", "w")
+        x = get_note(one_note)
+        print(x)
+        fb.write(x + "\n")
+        time.sleep(0.5) # vary the time here!
+        fb.close()
 
     #print len(one_note)
 

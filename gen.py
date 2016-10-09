@@ -8,3 +8,4 @@ while(1):
     print(note)
     fb.write(note + "\n")
     time.sleep(1)
+    fb.close()
