@@ -32,14 +32,17 @@ one_note = []
 #print len(one_note)
 
 while True:
-    one_note = []
+    one_note = np.array([0])
     for i in range(0, int(RATE / (CHUNK * SAMPLES_PER_SECOND))):
         data = stream.read(CHUNK)
-        #print len(data)
-        for d in data:
-            one_note.append(d)
-        # mynote = np.fromstring(data, dtype = np.int16)
-    print get_note(one_note)
+        # #print len(data)
+        # for d in data:
+        #     if d != None and len(d) != 0:
+        #         one_note.append(d)
+        temp_note = np.fromstring(data, dtype = np.int16)
+        np.concatenate([one_note,temp_note])
+    if len(one_note) != 0:
+        print get_note(one_note)
 
     #print len(one_note)
 
