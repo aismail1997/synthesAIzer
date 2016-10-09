@@ -6,6 +6,7 @@ def get_note(data):
     spectrum = fft.fft(data) # doing an fft on the data to get frequency spectrum
     freq = fft.fftfreq(len(spectrum)) # get the frequencies
     currentfreq = max(abs(spectrum))
+    currentnote = 'C'
     for note in notes_map:
         if (abs(currentfreq - notes_map[note]) < 15):
             currentnote = note
