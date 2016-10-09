@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3075,         76]
-NotebookOptionsPosition[      2820,         62]
-NotebookOutlinePosition[      3177,         78]
-CellTagsIndexPosition[      3134,         75]
+NotebookDataLength[      3393,         81]
+NotebookOptionsPosition[      3138,         67]
+NotebookOutlinePosition[      3495,         83]
+CellTagsIndexPosition[      3452,         80]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -28,14 +28,19 @@ Cell[BoxData[{
   RowBox[{"True", ",", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"note", " ", "=", " ", 
-     RowBox[{"Import", "[", 
-      RowBox[{"\"\<potato.txt\>\"", ",", " ", "\"\<Text\>\""}], "]"}]}], ";", 
-    "\[IndentingNewLine]", 
+     RowBox[{"SoundNote", "[", 
+      RowBox[{
+       RowBox[{"Import", "[", 
+        RowBox[{"\"\<potato.txt\>\"", ",", " ", "\"\<Text\>\""}], "]"}], ",", 
+       "1", ",", "\"\<Violin\>\""}], "]"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"EmitSound", "[", 
-     RowBox[{"Sound", "[", 
-      RowBox[{"SoundNote", "[", 
-       RowBox[{"note", ",", "1", ",", "\"\<Violin\>\""}], "]"}], "]"}], "]"}],
-     ";", "\[IndentingNewLine]", 
+     RowBox[{"Sound", "[", "note", "]"}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"AudioPlot", "[", 
+     RowBox[{"note", ",", 
+      RowBox[{"Appearance", "\[Rule]", "\"\<Discrete\>\""}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
     RowBox[{"Pause", "[", "1", "]"}], ";"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
  CellChangeTimes->{{3.684962695178602*^9, 3.6849627411558323`*^9}, {
@@ -58,7 +63,7 @@ Cell[BoxData[{
    3.684983291455298*^9, 3.6849833213700523`*^9}, {3.684983372070492*^9, 
    3.684983373954829*^9}, {3.684983533483156*^9, 3.68498361781012*^9}, {
    3.684983659877842*^9, 3.684983727388542*^9}, {3.684983768496728*^9, 
-   3.684983892341968*^9}}]
+   3.684983892341968*^9}, {3.6849862084143887`*^9, 3.68498628585823*^9}}]
 },
 WindowSize->{720, 874},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -77,7 +82,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2258, 40, 159, "Input"]
+Cell[558, 20, 2576, 45, 180, "Input"]
 }
 ]
 *)
