@@ -1,6 +1,8 @@
-** This project currently works only on Windows. **
+** This project was created for a hackathon, under 36 hours. As a result - the repository in its current form is a messy compilation of all the code developed during the hackathon. If you are really interested in trying out our code, please contact the contributor(s). 
 
-## In a nutshell
+This project currently works only on Windows.**
+
+## In a nutshell...
 An improvisational AI that unleashes the creative power of an entire orchestra to music producers and artists.
 
 ## How we built it
