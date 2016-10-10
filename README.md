@@ -5,7 +5,7 @@ This project currently works only on Windows.**
 ## In a nutshell...
 An improvisational AI that unleashes the creative power of an entire orchestra to music producers and artists.
 
-## What it is
+## What it does
 
 We have built an AI orchestra, capable of improvising musical pieces in real time, inspiring and adapting to the humans it is playing with, and generating completely new songs based on its experience. We organized these three capabilities under two distinct pipelines within our platform.
 
