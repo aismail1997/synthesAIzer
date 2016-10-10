@@ -1,11 +1,11 @@
-** This project was created for a hackathon, under 36 hours. As a result - the repository in its current form is a messy compilation of all the code developed during the hackathon. If you are really interested in trying out our code, please contact the contributor(s). 
+** This project was created for a hackathon, under 36 hours. As a result - the repository in its current form is a messy compilation of all the code developed during the hackathon. If you are really interested in trying out our code, please contact the contributor(s).
 
 This project currently works only on Windows.**
 
 ## In a nutshell...
 An improvisational AI that unleashes the creative power of an entire orchestra to music producers and artists.
 
-## How we built it
+## What it is
 
 We have built an AI orchestra, capable of improvising musical pieces in real time, inspiring and adapting to the humans it is playing with, and generating completely new songs based on its experience. We organized these three capabilities under two distinct pipelines within our platform.
 
