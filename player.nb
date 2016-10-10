@@ -10,16 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5625,        145]
-NotebookOptionsPosition[      5113,        124]
-NotebookOutlinePosition[      5458,        139]
-CellTagsIndexPosition[      5415,        136]
+NotebookDataLength[      7876,        182]
+NotebookOptionsPosition[      7301,        159]
+NotebookOutlinePosition[      7647,        174]
+CellTagsIndexPosition[      7604,        171]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6850119061194983`*^9, 3.685011909707526*^9}}],
 
-Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
@@ -31,25 +32,60 @@ Cell[BoxData[{
  RowBox[{"While", "[", 
   RowBox[{"True", ",", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"note", " ", "=", " ", 
-     RowBox[{"Import", "[", 
-      RowBox[{"\"\<notes.txt\>\"", ",", " ", "\"\<Text\>\""}], "]"}]}], ";", 
-    "\[IndentingNewLine]", 
-    RowBox[{"EmitSound", "[", 
-     RowBox[{"Sound", "[", 
-      RowBox[{"SoundNote", "[", 
-       RowBox[{"note", ",", "1", ",", "\"\<Violin\>\""}], "]"}], "]"}], "]"}],
-     ";", "\[IndentingNewLine]", 
-    RowBox[{"(*", 
+    RowBox[{
      RowBox[{
-      RowBox[{"AudioPlot", "[", 
-       RowBox[{"note", ",", 
-        RowBox[{"Appearance", "\[Rule]", "\"\<Discrete\>\""}], ",", 
-        RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-        RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ";"}], "*)"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"Pause", "[", "1", "]"}], ";"}]}], "\[IndentingNewLine]", 
-  "]"}]}], "Input",
+      RowBox[{
+       RowBox[{"note", " ", "=", " ", 
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<notes.txt\>\"", ",", " ", "\"\<Text\>\""}], "]"}]}], 
+       ";"}], "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"EmitSound", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Sound", "[", 
+           RowBox[{"SoundNote", "[", 
+            RowBox[{"note", ",", "1", ",", "\"\<Cello\>\""}], "]"}], "]"}], 
+          ",", 
+          RowBox[{"Sound", "[", 
+           RowBox[{"SoundNote", "[", 
+            RowBox[{"note", ",", "1", ",", "\"\<Piano\>\""}], "]"}], "]"}]}], 
+         "}"}], "]"}], "*)"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"EmitSound", "[", 
+       RowBox[{"Sound", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"SoundNote", "[", 
+           RowBox[{"note", ",", "1", ",", "\"\<Piano\>\""}], "]"}], ",", 
+          RowBox[{"SoundNote", "[", 
+           RowBox[{"note", ",", "1", ",", "\"\<Cello\>\""}], "]"}]}], "}"}], 
+        "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"AudioPlot", "[", 
+        RowBox[{"note", ",", 
+         RowBox[{"Appearance", "\[Rule]", "\"\<Discrete\>\""}], ",", 
+         RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ";"}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{"EmitSound", "[", 
+       RowBox[{"Sound", "[", 
+        RowBox[{"SoundNote", "[", 
+         RowBox[{"note", ",", "1", ",", "\"\<Cello\>\""}], "]"}], "]"}], 
+       "]"}], "*)"}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"(*", 
+     RowBox[{"EmitSoundSound", "[", 
+      RowBox[{"SoundNote", "[", 
+       RowBox[{"note", ",", "1", ",", "\"\<Percussion\>\""}], "]"}], "]"}], 
+     "*)"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Pause", "[", "0.5", "]"}], ";"}]}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"EmitSound", "[", 
+    RowBox[{"Sound", "[", 
+     RowBox[{"SoundNote", "[", 
+      RowBox[{"note", ",", "0.5", ",", "\"\<Cello\>\""}], "]"}], "]"}], "]"}],
+    "*)"}], "\[IndentingNewLine]", "]"}]}], "Input",
  CellChangeTimes->{{3.684962695178602*^9, 3.6849627411558323`*^9}, {
    3.684963570936225*^9, 3.6849635917678823`*^9}, {3.684963876775803*^9, 
    3.68496389126517*^9}, {3.684964235194295*^9, 3.6849642395274277`*^9}, {
@@ -73,56 +109,55 @@ Cell[BoxData[{
    3.684983892341968*^9}, {3.6849862084143887`*^9, 3.68498628585823*^9}, {
    3.684988491099921*^9, 3.6849885010536456`*^9}, {3.6849885568695793`*^9, 
    3.684988557192336*^9}, {3.6849885897913785`*^9, 3.684988665433976*^9}, {
-   3.6849887274783936`*^9, 3.6849887277881308`*^9}}],
+   3.6849887274783936`*^9, 3.6849887277881308`*^9}, {3.6849895241509733`*^9, 
+   3.6849895805573187`*^9}, 3.684989777791937*^9, {3.685001012217812*^9, 
+   3.6850010142456207`*^9}, {3.6850035934722834`*^9, 3.685003594804201*^9}, {
+   3.6850043794280653`*^9, 3.6850043803522625`*^9}, {3.6850071483300076`*^9, 
+   3.685007154963738*^9}, {3.685007819956046*^9, 3.685007843224904*^9}, {
+   3.6850078976278877`*^9, 3.685007900701019*^9}, {3.6850079966348324`*^9, 
+   3.6850080066431217`*^9}, {3.685008459896844*^9, 3.6850084887709293`*^9}, {
+   3.6850086641554008`*^9, 3.685008665046693*^9}, {3.68500871023442*^9, 
+   3.685008722823969*^9}, {3.6850088369869804`*^9, 3.6850088506438093`*^9}, 
+   3.6850090393450947`*^9, {3.685009688654264*^9, 3.6850096934509735`*^9}, {
+   3.6850097344702187`*^9, 3.685009737444659*^9}, {3.685009932106907*^9, 
+   3.6850100020139112`*^9}, {3.6850101151559563`*^9, 
+   3.6850101346878767`*^9}, {3.685010195804678*^9, 3.6850102846389837`*^9}, {
+   3.6850103329110947`*^9, 3.6850103670756636`*^9}, {3.6850104189221945`*^9, 
+   3.6850104429259*^9}, {3.685010479602725*^9, 3.685010542707692*^9}, {
+   3.685010575729244*^9, 3.6850106382260857`*^9}, {3.685010676911053*^9, 
+   3.68501072930555*^9}, {3.6850107994257016`*^9, 3.6850108346738677`*^9}, {
+   3.6850109292556925`*^9, 3.6850109520547714`*^9}, {3.6850109980061693`*^9, 
+   3.68501105018254*^9}, {3.6850111568305264`*^9, 3.685011157743699*^9}, {
+   3.6850114002338734`*^9, 3.6850114278716335`*^9}, {3.685011553161697*^9, 
+   3.6850115543782263`*^9}, 3.6850116917817545`*^9, {3.6850117935513115`*^9, 
+   3.6850118010301895`*^9}, {3.6850118450152316`*^9, 3.685011845369983*^9}, {
+   3.685011912783944*^9, 3.6850119249834347`*^9}, {3.6850120068273287`*^9, 
+   3.685012011906739*^9}, {3.685012079999354*^9, 3.6850121254588537`*^9}, {
+   3.6850132509332085`*^9, 3.6850132597852783`*^9}, {3.6850133100094166`*^9, 
+   3.685013322275329*^9}, {3.6850134924522295`*^9, 3.685013492672659*^9}, {
+   3.685013544511897*^9, 3.6850135446479936`*^9}, {3.685013623439964*^9, 
+   3.6850136570186296`*^9}}],
 
-Cell[BoxData[
- TemplateBox[{
-  "SoundNote","invnote",
-   "\"\\\"\\!\\(\\*RowBox[{\\\"\\\\\\\"\\\\\\\"\\\"}]\\)\\\" is not a valid \
-pitch specification.\"",2,12,26,26834383950646701206,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.684988571495923*^9, 3.6849886195565386`*^9, 
-  3.6849886784212227`*^9}],
+Cell[BoxData[""], "Input"],
 
-Cell[BoxData[
- TemplateBox[{
-  "SoundNote","invnote",
-   "\"\\\"\\!\\(\\*RowBox[{\\\"\\\\\\\"\\\\\\\"\\\"}]\\)\\\" is not a valid \
-pitch specification.\"",2,12,27,26834383950646701206,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.684988571495923*^9, 3.6849886195565386`*^9, 
-  3.6849886795427237`*^9}],
+Cell[BoxData[""], "Input"],
 
-Cell[BoxData[
- TemplateBox[{
-  "SoundNote","invnote",
-   "\"\\\"\\!\\(\\*RowBox[{\\\"\\\\\\\"\\\\\\\"\\\"}]\\)\\\" is not a valid \
-pitch specification.\"",2,12,28,26834383950646701206,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.684988571495923*^9, 3.6849886195565386`*^9, 
-  3.6849886805883236`*^9}],
+Cell[BoxData[""], "Input"],
 
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"SoundNote\\\", \\\"::\\\
-\", \\\"invnote\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"",2,12,29,26834383950646701206,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.684988571495923*^9, 3.6849886195565386`*^9, 
-  3.684988680648388*^9}],
+Cell[BoxData[""], "Input"],
 
-Cell[BoxData[""], "Message", "MSG",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellChangeTimes->{3.684988674867976*^9}],
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input"],
 
 Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{{3.6849885686679444`*^9, 3.684988595645181*^9}, 
-   3.684988673922678*^9}]
+ CellChangeTimes->{3.6850182092919283`*^9, 3.6850183915093*^9, 
+  3.6850184905020247`*^9, 3.6850192319046607`*^9, 3.68501935256656*^9}],
+
+Cell[BoxData[""], "Output"]
 }, Open  ]]
 },
-WindowSize->{720, 874},
+WindowSize->{1263, 626},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
@@ -138,14 +173,16 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 94, 1, 30, "Input"],
+Cell[655, 23, 6259, 115, 240, "Input"],
+Cell[6917, 140, 26, 0, 30, "Input"],
+Cell[6946, 142, 26, 0, 30, "Input"],
+Cell[6975, 144, 26, 0, 30, "Input"],
+Cell[7004, 146, 26, 0, 30, "Input"],
 Cell[CellGroupData[{
-Cell[580, 22, 2865, 53, 164, "Input"],
-Cell[3448, 77, 328, 7, 21, "Message"],
-Cell[3779, 86, 328, 7, 21, "Message"],
-Cell[4110, 95, 328, 7, 21, "Message"],
-Cell[4441, 104, 394, 8, 21, "Message"],
-Cell[4838, 114, 127, 3, 21, "Message"],
-Cell[4968, 119, 129, 2, 30, "Output"]
+Cell[7055, 150, 26, 0, 30, "Input"],
+Cell[7084, 152, 171, 2, 30, "Output"],
+Cell[7258, 156, 27, 0, 30, "Output"]
 }, Open  ]]
 }
 ]

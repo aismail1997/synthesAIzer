@@ -5,6 +5,7 @@ from note import get_note
 from note import get_next_note
 import numpy as np
 import time
+import random
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -44,11 +45,14 @@ while True:
         one_note = np.concatenate([one_note,temp_note])
     if len(one_note) != 0:
         fb = open("notes.txt", "w")
-        x = get_note(one_note)
+        y = get_note(one_note)
+        if y != '\n':
+            x = get_next_note(y)
+        else:
+            x = random.choice(["C", "E", "G", "B"])
         print(x)
         fb.write(x + "\n")
-        time.sleep(0.5) # vary the time here!
-        fb.close()
+    # time.sleep(1) # vary the time here!
 
     #print len(one_note)
 
