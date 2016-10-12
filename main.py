@@ -9,7 +9,7 @@ import time
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
-RATE = 44100
+RATE = 48000
 TEMPO = 60 #beats per minute - modify this
 SAMPLES_PER_SECOND = TEMPO / 60
 WAVE_OUTPUT_FILENAME = "output.wav"
